@@ -1,0 +1,36 @@
+﻿<ion-view ng-controller="mailCreateCtrl" >
+    
+    <!--<button class="round-overlay-button bottom-left button button-icon  icon icon-center ion-android-send" ng-click="sendMessage()"></button>-->
+    <!--<div class="float-flat-button">
+        <span class="height-fix">
+            <a ui-sref="add-trip" class="content" ng-click="sendMessage()">
+                <i class="ion-android-send"> </i>
+            </a>
+        </span>
+    </div>-->
+    <ion-content class="has-header">
+  
+        <div class="list" style="background-color:white;">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">To</span>
+                <input type="text" ng-model="current.recipients" placeholder="To">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Cc/Bcc</span>
+                <input type="text" placeholder="Cc/Bcc">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Subject</span>
+                <input type="text" ng-model="current.subject" placeholder="Subject">
+            </label>
+            <div class="item-input-inset">
+                <label class="item-input-wrapper">
+                    <textarea placeholder="Content" ng-model="current.messageBody" style="height:40vh;max-height:40vh;width:90vw; background-color:transparent;"></textarea>
+                </label>
+            </div>
+            <div class="item-input-inset">
+                <button class="button button-raised button-stable ink-dark button-full"  ng-click="sendMessage()" >Enviar</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

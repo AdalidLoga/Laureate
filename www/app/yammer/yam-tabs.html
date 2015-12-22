@@ -1,0 +1,31 @@
+﻿<!--<ion-view view-title="Yammer">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app.gallery" class="tab-item">
+                <i class="icon ion-arrow-graph-up-right"></i> Actividad
+            </a>
+            <a ui-sref="app.activity" class="tab-item">
+                <i class="icon  ion-android-contacts"></i>Mis Grupos
+            </a>
+            <a ui-sref="app.friends" class="tab-item">
+                <i class="icon ion-android-chat"></i> Mensajes
+            </a>
+        </div>
+    </ion-content>
+</ion-view>-->
+
+<ion-view >
+
+    <ion-tabs class="tabs-dark tabs-icon-top">
+        <ion-tab title="Actividad" icon="ion-arrow-graph-up-right" ui-sref="app.yam.feed">
+            <ion-nav-view name="tab-yam-feed"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Mis Grupos" icon="ion-android-contacts" ui-sref="app.yam.contacts">
+            <ion-nav-view name="tab-yam-contacts"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Mensajes" icon="ion-android-chat" ui-sref="app.mail.all">
+            <ion-nav-view name="tab-yam-msg"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+
+</ion-view>

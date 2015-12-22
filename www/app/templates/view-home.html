@@ -1,0 +1,136 @@
+﻿<ion-view ng-controller="homeCtrl as vm" >
+    <ion-content style="background:url(images/bg.jpg)">
+        <div id="Content">
+            <div style="overflow:auto;">
+                <div class="card" style="width:45vw;height:25vh;float:left;">
+                    <div class="item " > 
+                        <div style="background:url(images/mail.png);background-size:contain;height:45px; width: 45px;margin-left: 35%;"></div>
+                    <!--<h3>{{vm.mails[0].subject}}</h3>-->
+                    <p style="font-weight:bold">De: </p>
+                    <p> {{vm.mails[0].from.emailAddress.name}}</p>
+                    <p style="font-weight:bold">Asunto: </p>
+                    <p> {{vm.mails[0]._Subject}}</p>
+                    </div>
+                </div>
+                <div class="card" style="width:45vw;height:25vh;float:left;">
+                    <div class="item ">
+
+                        <div style="background:url(images/mail.png);background-size:contain;height:45px; width: 45px;margin-left: 35%;"></div>
+                        <!--<h3>{{vm.mails[1].subject}}</h3>-->
+                        <p style="font-weight:bold">De: </p>
+                        <p> {{vm.mails[1].from.emailAddress.name}}</p>
+                        <p style="font-weight:bold">Asunto: </p>
+                        <p> {{vm.mails[1]._Subject}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list card" style="overflow:auto;">
+                <div class="item item-avatar">
+                     <img src="{{vm.feed[0].image}}">
+                    <h2>{{vm.feed[0].fullName}}</h2>
+                    <p>{{vm.feed[0].createdAt}}</p>
+                </div>
+                <div class="item item-body">
+                    <p ng-bind-html="vm.feed[0].body.rich"></p>
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                </div>
+            </div>
+            <div style="overflow:auto;">
+                <div class="card" style="width:45vw;height:25vh;float:left;">
+                    <div class="item " >
+
+                        <div style="background:url(images/mail.png);background-size:contain;height:45px; width: 45px;margin-left: 35%;"></div>
+                        <!--<h3>{{vm.mails[2].subject}}</h3>-->
+                        <p style="font-weight:bold">De: </p>
+                        <p> {{vm.mails[2].from.emailAddress.name}}</p>
+                        <p style="font-weight:bold">Asunto: </p>
+                        <p> {{vm.mails[2]._Subject}}</p>
+                    </div>
+                </div>
+                <div class="card" style="width:45vw;height:25vh;float:left;">
+                    <div class="item " >
+
+                        <div style="background:url(images/mail.png);background-size:contain;height:45px; width: 45px;margin-left: 35%;"></div>
+                        <!--<h3>{{vm.mails[3].subject}}</h3>-->
+                        <p style="font-weight:bold">De: </p>
+                        <p> {{vm.mails[3].from.emailAddress.name}}</p>
+                        <p style="font-weight:bold">Asunto: </p>
+                        <p> {{vm.mails[3]._Subject}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list card" style="overflow:auto;">
+                <div class="item item-avatar">
+                    <img src="{{vm.feed[1].image}}">
+                    <h2>{{vm.feed[1].fullName}}</h2>
+                    <p>{{vm.feed[1].createdAt}}</p>
+                </div>
+                <div class="item item-body">
+                    <p ng-bind-html="vm.feed[1].body.rich"></p>
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                </div>
+            </div>
+            <div class="list card" style="overflow:auto;">
+                <div class="item item-avatar">
+                    <img src="{{vm.feed[2].image}}">
+                    <h2>{{vm.feed[2].fullName}}</h2>
+                    <p>{{vm.feed[2].createdAt}}</p>
+                </div>
+                <div class="item item-body">
+                    <p ng-bind-html="vm.feed[2].body.rich"></p>
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                </div>
+            </div>
+            <div style="overflow:auto;">
+                <div class="card" style="width:45vw;height:25vh;float:left;">
+                    <div class="item " >
+
+                        <div style="background:url(images/mail.png);background-size:contain;height:45px; width: 45px;margin-left: 35%;"></div>
+                        <!--<h3>{{vm.mails[4].subject}}</h3>-->
+                        <p style="font-weight:bold">De: </p>
+                        <p> {{vm.mails[4].from.emailAddress.name}}</p>
+                        <p style="font-weight:bold">Asunto: </p>
+                        <p> {{vm.mails[4]._Subject}}</p>
+                    </div>
+                </div>
+                <div class="card" style="width:45vw;height:25vh;float:left;">
+                    <div class="item " >
+
+                        <div style="background:url(images/mail.png);background-size:contain;height:45px; width: 45px;margin-left: 35%;"></div>
+                        <!--<h3>{{vm.mails[5].subject}}</h3>-->
+                        <p style="font-weight:bold">De: </p>
+                        <p> {{vm.mails[5].from.emailAddress.name}}</p>
+                        <p style="font-weight:bold">Asunto: </p>
+                        <p> {{vm.mails[5]._Subject}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list card" style="overflow:auto;">
+                <div class="item item-avatar">
+                    <img src="{{vm.feed[3].image}}">
+                    <h2>{{vm.feed[3].fullName}}</h2>
+                    <p>{{vm.feed[3].createdAt}}</p>
+                </div>
+                <div class="item item-body">
+                    <p ng-bind-html="vm.feed[3].body.rich"></p>
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+        <!--<ion-tabs class="tabs-dark tabs-icon-top ">
+                <ion-tab title="Actividad" icon="ion-arrow-graph-up-right" ui-sref="app.home.feed" >
+                    <ion-nav-view view-title="Inicio" name="tab-home-feed"></ion-nav-view>
+                </ion-tab>
+                <ion-tab title="Contactos" icon="ion-android-people" ui-sref="app.home.contacts">
+                    <ion-nav-view view-title="Inicio" name="tab-home-contacts"></ion-nav-view>
+                </ion-tab>
+                <ion-tab title="Correo" icon="ion-android-mail" ui-sref="app.home.mail">
+                    <ion-nav-view  view-title="Inicio" name="tab-home-mail"></ion-nav-view>
+                </ion-tab>
+            </ion-tabs>-->
+</ion-view>

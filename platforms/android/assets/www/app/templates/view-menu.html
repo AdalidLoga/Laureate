@@ -1,0 +1,74 @@
+﻿<ion-side-menus>
+    <!--<ion-side-menu-content>
+        <ion-nav-bar class="bar-dark">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view animation="slide-left-right"></ion-nav-view>
+    </ion-side-menu-content>-->
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive-900" >
+            <ion-nav-back-button >
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-android-more-vertical" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <!--<ion-nav-view name="fabContent"></ion-nav-view>
+        <ion-nav-view name="menuContent" ng-class="{expanded: isExpanded}"></ion-nav-view>-->
+        <ion-nav-view  ng-class="{expanded: isExpanded}"  animation="slide-left-right"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-header-bar class="dark-bg expanded">
+            <!--<span style="   background: url('../../images/logo.png');
+                            background-size: 100%;
+                            width: 100%;
+                            height: 80%;
+                            background-color: white;
+                            background-repeat: no-repeat; "></span>-->
+            <img src="../../images/logo_interior.png"  style="width:100%"/>
+
+        </ion-header-bar>
+        <ion-content class="stable-bg has-expanded-header">
+            <ion-list>
+                <ion-item nav-clear menu-close  ui-sref="app.home">
+                    <i class="icon ion-ios-home" style="font-size:30px;float: left;"></i>
+                    <div style="line-height: 30px;float: left;margin-left: 10px;">Inicio</div>
+                    
+                </ion-item>
+                <ion-item nav-clear menu-close  ui-sref="app.yam">
+                    <i class="icon ion-social-hackernews" style="font-size:30px;float: left;"></i>
+                    <div style="line-height: 30px;float: left;margin-left: 10px;">Yammer</div>
+                </ion-item>
+                <ion-item nav-clear menu-close   ui-sref="app.email">
+                    <i class="icon ion-android-mail" style="font-size:30px;float: left;"></i>
+                    <div style="line-height: 30px;float: left;margin-left: 10px;">Correo</div>
+                    
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="app.friends">
+                    <i class="icon ion-social-skype" style="font-size:30px;float: left;"></i>
+                    <div style="line-height: 30px;float: left;margin-left: 10px;">Llamada</div>
+                    
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="app.calendar">
+                    <i class="icon ion-android-calendar" style="font-size:30px;float: left;"></i>
+                    <div style="line-height: 30px;float: left;margin-left: 10px;">Calendario</div>
+                    
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="app.gallery">
+                    <i class="icon ion-ios-gear" style="font-size:30px;float: left;"></i>
+                    <div style="line-height: 30px;float: left;margin-left: 10px;">Ajustes</div>
+                    
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="app.sign-out">
+                    <i class="icon ion-log-out" style="font-size:30px;float: left;"></i>
+                    <div style="line-height: 30px;float: left;margin-left: 10px;">Salir</div>
+                    
+                </ion-item>
+            </ion-list>
+            
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

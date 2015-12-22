@@ -1,0 +1,130 @@
+﻿<ion-view ng-controller="calendarCtrl as vm">
+    <ion-content class="has-header">
+        <div class="list">
+            <div class="item" ng-repeat="day in vm.days" >  
+                <div style="border-bottom: solid 1px rgba(0,0,0,.12);
+                            font-size: 14px;
+                            font-weight: 700;
+                            height: 48px;
+                            line-height: 48px;
+                            color: rgba(0,0,0,.54);"> {{day.Title}}</div>
+                <div class="list">
+                   <div class="item" ng-repeat="event in day.Events" >
+                       <div class="blog_posts">
+                           <div class="blog_date">
+                               <figure>
+                                   <span>{{event.Time}}</span>
+                               </figure>
+                           </div>
+                           <div class="blog_desc">
+                               <p><span class="comment"><a>{{event.Title}}</a></span> </p>
+                               <h4>{{event.Description}}</h4>
+
+                           </div>
+                           <div class="clear"></div>
+                       </div>
+                    </div>
+                
+                </div>
+            </div>
+        
+        </div>
+     
+        
+
+            <!--<div style="text-align:center;">
+                  <table style="margin: 0 auto;" width="277" height="215" cellpadding="0" cellspacing="0" id="calendar" summary="This month's calendar">
+                      <caption><a href="#" title="previous month" class="nav">&laquo;</a> Diciembre <a href="#" title="next month" class="nav">&raquo;</a></caption>
+                      <tr>
+                          <th height="43" title="Sunday" scope="col" abbr="Sunday">D</th>
+                          <th scope="col" abbr="Monday" title="Monday">L</th>
+                          <th scope="col" abbr="Tuesday" title="Tuesday">M</th>
+                          <th scope="col" abbr="Wednesday" title="Wednesday">M</th>
+                          <th scope="col" abbr="Thursday" title="Thursday">J</th>
+                          <th scope="col" abbr="Friday" title="Friday">V</th>
+                          <th scope="col" abbr="Saturday" title="Saturday">S</th>
+                      </tr>
+                      <tr>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>4</td>
+                          <td>5</td>
+                      </tr>
+                      <tr>
+                          <td><a href="#">6</a></td>
+                          <td class="today">7</td>
+                          <td>8</td>
+                          <td>9</td>
+                          <td><a href="#">10</a></td>
+                          <td>11</td>
+                          <td>12</td>
+                      </tr>
+                      <tr>
+                          <td><a href="#">13</a></td>
+                          <td>14</td>
+                          <td>15</td>
+                          <td>16</td>
+                          <td>17</td>
+                          <td>18</td>
+                          <td>19</td>
+                      </tr>
+                      <tr>
+                          <td>20</td>
+                          <td>21</td>
+                          <td>22</td>
+                          <td><a href="#">23</a></td>
+                          <td>24</td>
+                          <td>25</td>
+                          <td>26</td>
+                      </tr>
+                      <tr>
+                          <td>27</td>
+                          <td>28</td>
+                          <td>29</td>
+                          <td>30</td>
+                          <td>31</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="blog_posts">
+                  <div class="blog_date">
+                      <figure><span>7:00 am</span></figure>
+                  </div>
+                  <div class="blog_desc">
+                      <p><span class="comment"><a >Clase de ingles Berlitz</a></span> </p>
+                      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</h4>
+
+                  </div>
+                  <div class="clear"></div>
+              </div>
+
+              <div class="blog_posts">
+                  <div class="blog_date">
+                      <figure><span>10:00 am</span></figure>
+                  </div>
+                  <div class="blog_desc">
+                      <p><span class="comment"><a >RV Invitation</a></span> </p>
+                      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</h4>
+
+                  </div>
+                  <div class="clear"></div>
+              </div>
+              <div class="blog_posts">
+                  <div class="blog_date">
+                      <figure><span>12:00 am</span></figure>
+                  </div>
+                  <div class="blog_desc">
+                      <p><span class="comment"><a href="#">SA Infraestructure's Bridge</a></span> </p>
+                      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</h4>
+
+                  </div>
+                  <div class="clear"></div>
+              </div>-->
+
+</ion-content>
+</ion-view>

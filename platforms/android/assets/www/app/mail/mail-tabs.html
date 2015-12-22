@@ -1,0 +1,32 @@
+﻿<!--<ion-view view-title="Correo" >
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app.mail.all" class="tab-item">
+                <i class="icon ion-android-list"></i> Todos
+                <ion-nav-view name="tab-all-mail"></ion-nav-view>
+            </a>
+            <a ui-sref="app.mail.unread" class="tab-item">
+                <i class="icon  ion-android-mail"></i> Sin leer
+                <ion-nav-view name="tab-unread-mail"></ion-nav-view>
+            </a>
+            <a ui-sref="app.mail.imp" class="tab-item">
+                <i class="icon ion-android-star"></i> Importante
+                <ion-nav-view name="tab-imp-mail"></ion-nav-view>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>-->
+
+<ion-view >
+    <ion-tabs class="tabs-dark tabs-icon-top">
+        <ion-tab title="Importantes" icon="ion-android-star" ui-sref="app.email.imp">
+            <ion-nav-view name="tab-imp-mail"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Sin leer" icon="ion-android-mail" ui-sref="app.email.unread">
+            <ion-nav-view name="tab-unread-mail"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Todos" icon="ion-android-list" ui-sref="app.email.all">
+            <ion-nav-view name="tab-all-mail"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

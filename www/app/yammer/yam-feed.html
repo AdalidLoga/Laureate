@@ -1,0 +1,35 @@
+﻿<ion-view ng-controller="yamFeedCtrl as vm" style="top:0%;">
+   
+    <!--<button class="round-overlay-button bottom-right button button-icon  icon icon-center ion-plus-circled" ng-click="createMail()"></button>-->
+    <ion-content style="background-color:white;">
+            <div ng-repeat="feed in vm.feed" type="item-link" >
+                <div class="list card">
+                    <div class="item item-avatar" sb-load="feed" my-attribute="vm">
+                    </div>
+                    <div class="item item-body">
+                        <p ng-bind-html="feed.body.rich"></p>
+                        <p>
+                            <a href="#" class="subdued"> Me Gusta</a>
+                            <a href="#" class="subdued"> Comentarios</a>
+                        </p>
+                    </div>
+                    <div class="item tabs tabs-secondary tabs-icon-left">
+                        <!--<a class="tab-item" href="#">
+                            <i class="icon ion-thumbsup"></i>
+                            Like
+                        </a>-->
+                        <a class="tab-item" href="#">
+                            <i class="icon ion-chatbox"></i>
+                            Comentarios
+                        </a>
+                        <!--<a class="tab-item" href="#">
+                            <i class="icon ion-share"></i>
+                            Share
+                        </a>-->
+                    </div>
+
+                </div>
+            </div>
+
+    </ion-content>
+</ion-view>
