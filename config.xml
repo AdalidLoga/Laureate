@@ -17,7 +17,9 @@
   <preference name="KeyboardDisplayRequiresUserAction" value="false" />
   <preference name="DisallowOverscroll" value="true" />
   <!-- Support for Cordova 5.0.0 plugin system -->
-  <plugin name="cordova-plugin-whitelist" version="1" />
+  <plugin name="cordova-plugin-inappbrowser" spec="1.1.0" />
+  <plugin name="cordova-plugin-whitelist" spec="1.2.0" />
+
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
   <allow-intent href="tel:*" />
